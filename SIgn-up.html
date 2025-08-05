@@ -64,8 +64,29 @@
     <main>
         <h1 >Sign Up</h1>
         <div class="elevated-box">
-             <div id="mySignin" onclick="login()"><img src="sign_in_w_google.png" alt="google" style="cursor:pointer;height: 60px;width: 309px;"/></div>
-                
+        <div class="form">
+            <form>
+                <label for="email"><b>Email</b></label><br>
+                <input type="text" placeholder="Enter Email" name="email" required
+                pattern="[a-z0-9._]+@[a-z0-9]+\.[a-z]{2,}$">
+                <p></p>
+                <label for="psw"><b>Password</b></label><br>
+                <input type="password" placeholder="Enter Password" name="psw" required
+                pattern="  (?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
+                <p style="font-size: 6px;">Password must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters</p>
+                <label for="psw-repeat"><b>Repeat Password</b></label><br>
+                <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+                <!--To verify the password, we need javascript here-->
+                <p></p>
+                <button type="submit" class="signupbtn">Sign Up</button>
+                <p style="font-size: 14px;">Already have an Account? add link here</p>
+            </form>
+        </div> 
+        <div id="mySignin" onclick="login()" style="margin-top: 20px;">
+        <img src="sign_in_w_google.png" alt="google" style="cursor:pointer;height:60px;width:300px;">
+    </div>
+
+
 
         </div>
     </main>
