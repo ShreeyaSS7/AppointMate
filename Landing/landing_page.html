@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css">
+  <title>AppointMate</title>
+  <style>
+    .hero {
+      position: relative;
+      width: 100%;
+      height: 500px;
+    }
+
+    .hero img {
+      width: 100%;
+      height: 100%;
+      opacity: 0.7;
+    }
+
+    .hero-title {
+      transform: translate(-50%, -50%);
+      color: rgb(1, 92, 98);
+      font-size: 65px;
+    }
+
+    .login-btn {
+      position: absolute;
+      top: 20px;
+      right: 30px;
+      padding: 12px 24px;
+      background-color: #067e89;
+      color: white;
+      font-size: 20px;
+      border-radius: 20px;
+    }
+
+    h2 {
+      text-align: center;
+    }
+
+    p {
+      font-size: medium;
+      text-align: center;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .appt-btn {
+        position: absolute;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        padding: 25px 30px;
+        border-radius: 10px;
+        background-color: #067e89;
+        color: white;
+        font-size: 30px;
+        margin-left: 530px;
+    }
+
+    .send-btn{
+        position: absolute;
+        display: inline-block;
+        padding: 8px 30px;
+        border-radius: 20px;
+        background-color: #ffffff;
+        color: black;
+        font-size: 20px;
+        margin-left: 250px;
+    }
+
+
+  </style>
+</head>
+<body>
+    <div class="hero">
+    <img src="healthcare.jpeg" alt="AppointMate" />
+    <h1 class="hero-title">AppointMate</h1>
+    </div>
+
+    <a href="#" class="login-btn">Login</a>
+
+    <section class="features">
+        <h2 style="font-size: 40px;">Why Choose AppointMate?</h2>
+        <p style="font-size: 20px;">Experience the ease of booking appointments with our user-friendly interface. Our platform is designed to make your life easier.</p>
+
+        <div class="card-container">
+            <div class="card">
+                <h3>Smart Scheduling</h3>
+                <p>Finds the perfect time slot for everyone</p>
+            </div>
+    
+            <div class="card">
+                <h3>Secure & Private</h3>
+                <p>Bank-level encryption for your data</p>
+            </div>
+    
+            <div class="card">
+                <h3>Real-time Updates</h3>
+                <p>Stay informed about your appointments</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="features">
+        <h2 style="font-size: 60px; padding-top: 130px; padding-bottom: 50px;">Testimonials</h2>
+        <div class="card-containers">
+
+            <div class="cards">
+                <p>
+                    "AppointMate has made my life so much easier. I can finally manage my appointments without any hassle." <br><br>
+                </p>
+                <h3>Shriya R.</h3>
+                <h3>June 10, 2025</h3>
+            </div>
+
+            <div class="cards">
+                <p>
+                    " I was skeptical at first, but AppointMate really delivers. Their scheduling system is so intuitive and user-friendly." <br><br>
+                </p>
+                <h3>Shreeya S.</h3>
+                <h3>June 15, 2025</h3>
+            </div>
+
+            <div class="cards">
+                <p>
+                    "Say the name" <br><br>
+                </p>
+                <h3>Seventeen</h3>
+                <h3>May 26, 2015</h3>
+            </div>
+
+            <div class="cards">
+                <p>
+                    "Say the name" <br><br>
+                </p>
+                <h3>Seventeen</h3>
+                <h3>May 26, 2015</h3>
+            </div>
+
+            <div class="cards">
+                <p>
+                    "Say the name" <br><br>
+                </p>
+                <h3>Seventeen</h3>
+                <h3>May 26, 2015</h3>
+            </div>
+
+        </div>
+    </section>
+
+    <section>
+        <h2 style="font-size: 40px;">Ready To Transform Your Healthcare Experience?</h2>
+        <p style="font-size: 20px;">
+            Join thousands of patients and doctors who trust AppointMate for their appointment management
+        </p>
+
+        <a href="#" class="appt-btn">Book Your First Appointment</a>
+    
+    </section>
+
+    <section class="contact">
+        <h2 style="font-size: 60px; text-align: left; padding-left: 50px; padding-top: 100px;" >Contact Us</h2>
+        <p>If you have any inquiries, please use the contact form</p><br>
+    </section>
+
+
+    <div class="form">
+        <form style="padding-left: 50px;padding-bottom: 50px;">
+            <label for="name" style="font-size: 25px;">Name</label><br>
+            <input type="text" id="name" name="name" size="50"><br><br>
+
+            <label for="email" style="font-size: 25px;">Email</label><br>
+            <input type="text" id="email" name="email" size="50"><br><br>
+            
+            <label for="Contact" style="font-size: 25px;">Phone No</label><br>
+            <input type="text" id="Contact" name="phone" size="50"><br><br>
+
+            <label for="message" style="font-size: 25px;">Message</label><br>
+            <textarea rows="8" cols="85" id="message" name="message"></textarea><br><br>
+
+            <a href="#" class="send-btn">Send</a>
+        </form>
+    </div>
+
+</body>
+
+</html>
