@@ -52,8 +52,7 @@
                 });
                 request.execute(function (resp)
                 {
-                    /* console.log(resp);
-                    console.log(resp['id']); */
+                    
                     var email = '';
                     if(resp['emails'])
                     {
@@ -61,11 +60,11 @@
                         {
                             if(resp['emails'][i]['type'] == 'account')
                             {
-                                email = resp['emails'][i]['value'];//here is required email id
+                                email = resp['emails'][i]['value'];
                             }
                         }
                     }
-                   var usersname = resp['displayName'];//required name
+                   var usersname = resp['displayName'];
                 });
             }
         }
