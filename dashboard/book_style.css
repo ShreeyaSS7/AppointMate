@@ -153,6 +153,10 @@ background-color: teal;
 color:white;
 }
 
+#app .navbar {
+    display: none !important;
+}
+
 a {
   text-decoration: none;  
   color: inherit;         
