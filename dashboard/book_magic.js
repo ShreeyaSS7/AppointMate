@@ -22,3 +22,16 @@ function loadPage(page) {
       document.querySelector('#app').textContent = "Failed to load page.";
     });
 }
+const cards=document.querySelectorAll(".cards-app, .cards-test, .cards-meds");
+cards.forEach(card=>{
+card.addEventListener('mouseenter',function(){
+card.style.transform='translateY(-10px)';
+card.style.boxShadow='0 8px 25px rgba(0,0,0,0.2)';
+
+});
+
+card.addEventListener('mouseleave',function(){
+  card.style.transform = 'translateY(0px)';
+  card.style.boxShadow = '0 2px 8px rgba(0,0,0,0.1)';
+});
+});
