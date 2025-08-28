@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>patient Dasboard</title>
+        <link rel="stylesheet" href="book_style.css">
+ 
+</head>
+<body>
+      <nav class="navbar">
+        <div class="logo">
+          Patient Dashboard
+        </div>
+        <div class="navigation">
+         <!-- <a href="#" style="background-color:blue; color:beige"> Book Appointment</a>
+         <a href="#" style="background-color:blue; color:beige"> Book Test</a>-->
+          <div class="btn"><a href="\BookAppt\doctors.html">Book appointment</a></div>
+          <div class="btn"><a href="/">Book test</a></div>
+          <div class="btn"><a href="\Landing\index.html">Logout</a></div>
+          
+        </div>
+      </nav>
+      
+      
+      <h1 style="padding-left: 32px;">Hello [name here],  Welcome back!</h1>
+      <section class="features">
+          <div class="card-containers">
+              <div class="cards-app" id="followCard">
+                  <div class="iconic"></div><br>
+                  <h3>Upcoming appointments</h3>
+        <h1><b>2</b></h1>
+    </div>
+    <div class="cards-test" id="followCard">
+        <div class="iconic"></div><br>
+        <h3>Upcoming tests</h3>
+        <h1><b>2</b></h1>
+    </div>
+            <div class="cards-meds" id="followCard">
+                <div class="iconic"></div><br>
+                <h3>Current Prescribtion</h3>
+                Levipil (500mg) <br>
+                Dose:1-0-1<br>
+      </div>
+    </div>
+</section><div class="check">
+    <div class="change"><a href="#" data-page="book" >Appointment</a></div>
+    <div class="change"><a href="#" data-page="prescription">Prescription</a></div>
+    <div class="change"><a href="#" data-page="tests">Tests</a></div>
+    
+</div>
+<div class="book">
+<main id="app">
+<section class="appt_part">
+      <div class="appt" >
+        <div class="doctor-info">
+          <div class="face"></div>
+          <div>
+            <h3>Dr.John Doe</h3>
+            <p style="color:gray">Cardiologist</p>
+            <span style="color:gray">21/03/2026 Time:6:30pm</span>
+          </div>
+          
+    </div>
+    <div class="status pending">pending</div>
+    <div class="type">Follow Up</div>
+  </div>
+  <div class="appt">
+    <div class="doctor-info">
+      <div class="face"></div>
+      <div>
+       <h3>Dr.Jeon Wonwoo</h3>
+       <p style="color:gray">Oncologist</p>
+       <span style="color:gray">26/03/2026 Time:6:30pm</span>
+      </div>
+      
+    </div>
+    <div class="status upcoming">confirmed</div>
+    <div class="type">Consultation</div>
+  </div>
+  <div class="appt">
+    <div class="doctor-info">
+      <div class="face"></div>
+      <div>
+        <h3>Dr.Boo Suengkwan</h3>
+        <p style="color:gray">Orthopedic</p>
+        <span style="color:gray">21/12/2025 Time:7:00pm</span>
+      </div>
+
+    </div>
+    <div class="status past">Past</div>
+    <div class="type">Follow Up</div>
+  </div>
+
+</section>
+</main>
+</div>
+<script src="book_magic.js"></script>
+</body>
+
+    </html>

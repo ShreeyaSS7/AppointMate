@@ -45,31 +45,41 @@ div {
 }
 .cards-app{
     flex:1;
-    background: lightcoral;
+    background: #c9df8a;
     padding:20px;
     border-radius: 10px;
     text-align: center;
     box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+        transition: all 0.1s ease;
+}
+.cards-app:hover {
+  transform: translateY(-8px) scale(1.02); /* Float + grow */
 }
 .cards-test{
     flex:1;
-    background: lightblue;
+    background: #afeeee;
     padding:20px;
     border-radius: 10px;
     text-align: center;
     box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+        transition: all 0.1s ease;
   }
-
+.cards-test:hover {
+  transform: translateY(-8px) scale(1.02); /* Float + grow */
+}
 .cards-meds{
     flex:1;
-    background: lightgreen;
+    background: #ffb6c1;
     padding:20px;
     border-radius: 10px;
     text-align: center;
     box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    transition: all 0.1s ease;
   }
 
-
+.cards-meds:hover {
+  transform: translateY(-8px) scale(1.02); /* Float + grow */
+}
 .iconic{
     font-size: 30px;
 }
@@ -100,25 +110,25 @@ div {
 }
 .status {
     
-    font-size: 12px;
+    font-size: 20px;
     color: white;
     border-radius: 5px;
-    padding: 5px 10px;
+    padding: 10px 20px;
 }
 .upcoming{
-    background-color: green;
+    background-color: #84B067;
     color: white;
 }
 .pending{
-    background-color: rgb(232, 232, 15);
-color: rgb(4, 1, 1);
+    background-color: #fff25c ;
+color: rgb(62, 59, 59)
 }
 .cancelled{
-    background-color: rgb(215, 73, 73);
+    background-color: #FA8072;
     color: white;
 }
 .missed{
-    background-color: red;
+    background-color: #BA2636;
     color: white;
     
 }
@@ -128,6 +138,78 @@ color: rgb(4, 1, 1);
 }
 
 .type {
-    font-size: 14px;
+    font-size: 20px;
     color: #666;
 }
+
+.change{
+    display: flex;
+    width:150px;
+    height: 40px;
+    cursor:pointer;
+    margin-left: 0px;
+    text-align:center;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 0px;
+    background-color:white;
+    border-radius: 5px;
+    color:teal;
+    
+}
+.change:hover{
+background-color: teal;
+
+color:white;
+}
+
+#app .navbar {
+    display: none !important;
+}
+
+a {
+  text-decoration: none;  
+  color: inherit;         
+}
+a:hover {
+  text-decoration: underline; 
+}
+
+
+.check{
+    display: flex;
+    gap:10px;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items:center;
+}
+
+.med-cards{
+    background:white;
+    margin: 0 30px 30px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+.med-card{
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    width:1425px;
+    border-top: 1px solid #eee;
+    padding: 10px 0;
+}
+.meds{
+        display: flex;
+    gap:10px;
+    align-items: center;
+}
+
+.dose{
+    
+    font-size: 20px;
+    color: #666;
+}
+
+

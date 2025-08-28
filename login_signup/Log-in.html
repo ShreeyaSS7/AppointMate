@@ -20,7 +20,7 @@
             <label for="psw"><b>Password</b></label><br>
             <input type="password" placeholder="Enter Password" name="psw" required>
             <p style="font-size: 10px;"><a href="#">Forget Password?</a></p>
-            <button type="submit" class="login">Log In</button>
+            <button type="submit" class="login" onclick="window.location.href='/dashboard/dashboard.html'">Log In</button>
             <p style="font-size: 14px;margin-bottom: -10px;"><a href="SIgn-up.html">New to AppointMate? Sign Up now!</a></p>
 
         </form>
@@ -52,8 +52,7 @@
                 });
                 request.execute(function (resp)
                 {
-                    /* console.log(resp);
-                    console.log(resp['id']); */
+                    
                     var email = '';
                     if(resp['emails'])
                     {
@@ -61,11 +60,11 @@
                         {
                             if(resp['emails'][i]['type'] == 'account')
                             {
-                                email = resp['emails'][i]['value'];//here is required email id
+                                email = resp['emails'][i]['value'];
                             }
                         }
                     }
-                   var usersname = resp['displayName'];//required name
+                   var usersname = resp['displayName'];
                 });
             }
         }
