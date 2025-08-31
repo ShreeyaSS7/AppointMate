@@ -6,6 +6,26 @@ body{
     padding-right: 50px;
 }
 
+.back-btn{
+    background-color: #00a6ff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.appt-btn{
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 28px;
+    border: 0px;
+    font-size: 20px;
+    margin-left: 70px;
+    cursor: pointer;
+}
 
 .card-container {
     display: flex;
