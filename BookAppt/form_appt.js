@@ -17,7 +17,7 @@ document.querySelector('.forms').addEventListener('submit', function(e) {
   };
 
   console.log('Form data:', formData);
-  alert('Data collected: ' + JSON.stringify(formData));
+  //alert('Data collected: ' + JSON.stringify(formData));
   
 
   
