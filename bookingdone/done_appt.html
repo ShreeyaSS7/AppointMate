@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="done.css">
 </head>
 <body>
-<div class="container">
+<div class="container" id="receipt">
         <div class="success-icon">
             <svg class="checkmark" viewBox="0 0 24 24">
                 <path d="M20 6L9 17l-5-5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -27,47 +27,53 @@
         <div class="details-grid">
             <div class="detail-item">
                 <div class="detail-label">Patient Name</div>
-                <div class="detail-value">patient name</div>
+                <div class="detail-value" id="name">patient name</div>
             </div>
             
             <div class="detail-item">
-                <div class="detail-label">Date</div>
-                <div class="detail-value">9/5/2025</div>
-            </div>
-            
-            <div class="detail-item">
-                <div class="detail-label">Clinic</div>
-                <div class="detail-value">Central Medical Center</div>
-            </div>
-            
-            <div class="detail-item">
-                <div class="detail-label">Time</div>
-                <div class="detail-value">14:00</div>
-            </div>
-            
-            <div class="detail-item">
-                <div class="detail-label">Doctor</div>
-                <div class="detail-value">Dr. Michael Brown</div>
+                <div class="detail-label">Age</div>
+                <div class="detail-value" id="age">--</div>
             </div>
             
             <div class="detail-item">
                 <div class="detail-label">Contact</div>
-                <div class="detail-value">0000000000</div>
+                <div class="detail-value" id='phone'>0000000000</div>
             </div>
             
             <div class="detail-item">
-                <div class="detail-label">Specialty</div>
-                <div class="detail-value">General Medicine</div>
+            <div class="detail-label">Email</div>
+                <div class="detail-value" id="email">--</div>
             </div>
             
+            <div class="detail-item">
+                <div class="detail-label">Gender</div>
+                <div class="detail-value" id='gender'>other</div>
+            </div>
+            <div class="detail-item">
+                <div class="detail-label">Date</div>
+                <div class="detail-value" id="date">--</div>
+            </div>
+            
+            
+            <div class="detail-item">
+                <div class="detail-label">Time</div>
+                <div class="detail-value" id="time">14:00</div>
+            </div>
+            
+            <div class="detail-item">
+                <div class="detail-label">Type</div>
+                <div class="detail-value" id="first">first</div>
+            </div>
+            
+
+            <div class="detail-item reason-section">
+                <div class="detail-label">Reason for Visit</div>
+                <div class="detail-value" id="reason">i am the forest i am the fire i am watching it burn</div>
+            </div>
+
             <div class="detail-item">
                 <div class="detail-label">Payment</div>
                 <div class="detail-value">Online Payment</div>
-            </div>
-            
-            <div class="detail-item reason-section">
-                <div class="detail-label">Reason for Visit</div>
-                <div class="detail-value">i am the forest i am the fire i am watching it burn</div>
             </div>
         </div>
         
@@ -82,7 +88,7 @@
         </div>
         
         <div class="buttons">
-            <button class="btn btn-primary" onclick="downloadReceipt()">
+            <button class="btn btn-primary" id="downloadReceipt">
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                     <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
                     <polyline points="7,10 12,15 17,10"/>
@@ -112,5 +118,7 @@
             </button>
         </div>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js"></script>
+    <script src="done.js"></script>
 </body>
 </html>
