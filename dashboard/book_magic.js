@@ -1,3 +1,13 @@
+const currentUser = localStorage.getItem("currentUser");
+
+  if (!currentUser) {
+
+    alert("Please log in first!");
+    window.location.href = "/login_signup/Log-in.html";
+  }
+
+
+
 document.addEventListener("DOMContentLoaded", () => {
   document.querySelectorAll('.check a').forEach(link => {
     link.addEventListener('click', e => {
@@ -35,3 +45,8 @@ card.addEventListener('mouseleave',function(){
   card.style.boxShadow = '0 2px 8px rgba(0,0,0,0.1)';
 });
 });
+
+document.getElementById("logout").addEventListener("click", () => {
+    localStorage.removeItem("currentUser");
+    window.location.href = "/login_signup/Log-in.html";
+  });
