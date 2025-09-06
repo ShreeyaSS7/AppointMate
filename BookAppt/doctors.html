@@ -24,7 +24,7 @@
                     <span class="day">Thurs</span>
                 </div>
                 <p style="padding-bottom: 10px;">Consultation Fee : Rs1500(first time)<br>Rs800(follow-up)</p>
-                <a href="/BookAppt/appointment1.html" class="appt-btn">Book Appointment</a>
+                <button onclick="doc('d1')" class="appt-btn">Book Appointment</button>
             </div>
     
             <div class="card">
@@ -39,7 +39,7 @@
                     <span class="day">Sat</span>
                 </div>
                 <p style="padding-bottom: 10px;">Consultation Fee : Rs1500(first time)<br>Rs800(follow-up)</p>
-                <a href="/BookAppt/appointment2.html" class="appt-btn">Book Appointment</a>
+                <button onclick="doc('d2')" class="appt-btn">Book Appointment</button>
             </div>
     
             <div class="card">
@@ -53,10 +53,16 @@
                     <span class="day">Thurs</span>
                 </div>
                 <p style="padding-bottom: 10px;">Consultation Fee : Rs1500(first time)<br>Rs800(follow-up)</p>
-                <a href="/BookAppt/appointment3.html" class="appt-btn">Book Appointment</a>
+                <button onclick="doc('d3')" class="appt-btn">Book Appointment</a>
             </div>
         </div>
     </section>
+<script>
+  function doc(d){
+    localStorage.setItem("doctor",d);
+    window.location.href="/BookAppt/appointment1.html";
+  }
 
+</script>
 </body>
 </html>
