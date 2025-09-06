@@ -6,6 +6,9 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+<button onclick="main()" id="back">
+    ← Back
+</button>
     <main>
         <h1 >Sign Up</h1>
         <div class="elevated-box">
@@ -24,7 +27,7 @@
                 <input type="password" id="rep_pass" placeholder="Repeat Password" name="psw-repeat" required>
              
                 <p></p>
-                <button type="submit" class="signupbtn">Sign Up</button>
+                <button type="submit" class="gib">Sign Up</button>
                 <p style="font-size: 14px;"><a href="Log-in.html">Already have an Account?</a></p>
             </form>
         </div> 
@@ -38,5 +41,10 @@
     </main>
       <script src="log_sign.js">
         </script>
+        <script>
+    function main(){
+        window.location.href="/Landing/index.html";
+    }
+</script>
 </body>
 </html>
