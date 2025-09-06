@@ -29,6 +29,8 @@ body {
     border: none;
     font-weight: bold;
     cursor: pointer;
+    text-align: center;
+    text-decoration: none;
   }
 
   .rate-card {

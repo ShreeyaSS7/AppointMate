@@ -58,7 +58,7 @@
                     <span class="prerequisite">Remove metal objects</span>
                     <span class="prerequisite">Wear hospital gown</span>
                 </div>
-                <button class="book-btn">Book X-Ray</button>
+                <button onclick="test('X-Ray')" class="book-btn">Book X-Ray</button>
             </div>
 
             <div class="card">
@@ -81,7 +81,7 @@
                     <span class="prerequisite">Remove jewelry</span>
                     <span class="prerequisite">Inform about claustrophobia</span>
                 </div>
-                <button class="book-btn">Book MRI</button>
+                <button onclick="test('MRI')" class="book-btn">Book MRI Scan</button>
             </div>
 
             <div class="card">
@@ -111,12 +111,17 @@
                     <span class="prerequisite">Remove jewelry</span>
                     <span class="prerequisite">Inform about allergies</span>
                 </div>
-                <button class="book-btn"><a ref="\bookingdone\done_tests.html">Book CT-Scan</a></button>
+                <button onclick="test('CT Scan')" class="book-btn">Book CT-Scan</button>
             </div>
 
         </div>
     </section>
-
+<script>
+    function test(t){
+        localStorage.setItem("Test",t);
+        window.location.href="\BookTests\book_tests.html";
+    }
+</script>
 </body>
 </html>
 
