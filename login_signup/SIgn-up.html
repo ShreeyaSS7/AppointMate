@@ -6,11 +6,16 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+<button onclick="main()" id="back">
+    ← Back
+</button>
     <main>
         <h1 >Sign Up</h1>
         <div class="elevated-box">
         <div class="form">
             <form id="sign-up" method="POST">
+                <label for="name"><b>Name</b></label><br>
+                <input type="text" id="name" placeholder="Enter Name" required>
                 <label for="email"><b>Email</b></label><br>
                 <input type="text" id="mail" placeholder="Enter Email" name="email" required
                 pattern="[a-z0-9._]+@[a-z0-9]+\.[a-z]{2,}$">
@@ -24,7 +29,7 @@
                 <input type="password" id="rep_pass" placeholder="Repeat Password" name="psw-repeat" required>
              
                 <p></p>
-                <button type="submit" class="signupbtn">Sign Up</button>
+                <button type="submit" class="gib">Sign Up</button>
                 <p style="font-size: 14px;"><a href="Log-in.html">Already have an Account?</a></p>
             </form>
         </div> 
@@ -38,5 +43,10 @@
     </main>
       <script src="log_sign.js">
         </script>
+        <script>
+    function main(){
+        window.location.href="/Landing/index.html";
+    }
+</script>
 </body>
 </html>

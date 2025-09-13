@@ -8,6 +8,9 @@
     
 </head>
 <body>
+<button onclick="main()" id="back">
+    ← Back
+</button>
 <main>
 <h1>Log In</h1>
 <div class="elevated-box">
@@ -25,7 +28,7 @@
             <label for="psw"><b>Password</b></label><br>
             <input type="password" id="pass"placeholder="Enter Password" name="pass" required>
             <p style="font-size: 10px;"><a href="#">Forget Password?</a></p>
-            <button type="submit" class="login" id ="sub">Log In</button>
+            <button type="submit" class="gib" id ="sub">Log In</button>
             <p style="font-size: 14px;margin-bottom: -10px;"><a href="SIgn-up.html">New to AppointMate? Sign Up now!</a></p>
 
         </form>
@@ -35,6 +38,11 @@
 </div>
 </main>
 <script src="log_sign.js"></script>
+<script>
+    function main(){
+        window.location.href="/Landing/index.html";
+    }
+</script>
           
 </body>
 </html>

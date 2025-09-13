@@ -9,6 +9,7 @@ if (sign_form) {
         const s_email = document.getElementById("mail");
         const s_pass = document.getElementById("password");
         const s_rep_pass = document.getElementById("rep_pass");
+        const name=document.getElementById("name");
 
     const val_email = s_email.value.trim();
     const val_pass = s_pass.value.trim();
@@ -30,8 +31,8 @@ if (sign_form) {
       window.location.href = "login_signup/Log-in.html";
       return;
     }
-
-    users.push({ email: val_email, pass: val_pass });
+// let meds=["Levipil 500 mg 1-0-1","Shellcal 0-0-1","CERTIcan 0.25mg post dinner"]
+    users.push({ name:name, email: val_email, pass: val_pass,appointments:[],tests:[],prescribtion:[] });
     localStorage.setItem("users", JSON.stringify(users));
 
     alert("Sign up successful!");
