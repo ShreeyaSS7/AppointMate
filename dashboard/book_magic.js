@@ -1,5 +1,13 @@
 const currentUser = localStorage.getItem("currentUser");
+function initializeLocalStorage() {
+  if (!localStorage.getItem('appointments')) {
+    localStorage.setItem('appointments', JSON.stringify([]));
+  }
 
+  if (!localStorage.getItem('tests')) {
+    localStorage.setItem('tests', JSON.stringify([]));
+  }
+}
   if (!currentUser) {
 
     alert("Please log in first!");

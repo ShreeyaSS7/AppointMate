@@ -1,7 +1,6 @@
 function handleFormSubmit() {
   const doctor = localStorage.getItem("doctor");
   
-  // Collect form data
   const formData = {
     name: document.getElementById('name').value.trim(),
     age: document.getElementById('age').value.trim(),
@@ -15,11 +14,10 @@ function handleFormSubmit() {
     doctor: doctor,
   };
 
-  // Validation
   if (!formData.name || !formData.age || !formData.phone || !formData.email || 
       !formData.date || !formData.time || !formData.reason) {
     alert('Please fill in all required fields.');
-    return false; // Prevent form submission
+    return false; 
   }
 
   if (formData.gender === 'disabled' || formData.visitType === 'disabled') {
@@ -27,7 +25,7 @@ function handleFormSubmit() {
     return false;
   }
 
-  // Store data
+  
   sessionStorage.setItem('appointmentData', JSON.stringify(formData));
   
   const appointments = JSON.parse(localStorage.getItem("appointments")) || [];
@@ -40,5 +38,5 @@ function handleFormSubmit() {
   appointments.push(newAppt);
   localStorage.setItem("appointments", JSON.stringify(appointments));
   
-  return true; // Allow form submission to proceed
+  return true; 
 }

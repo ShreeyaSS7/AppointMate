@@ -23,13 +23,12 @@ window.addEventListener('DOMContentLoaded', () => {
 document.querySelector('.forms').addEventListener('submit', function (e) {
   e.preventDefault();
   
-  console.log('Form submission started'); // Debug log
+  console.log('Form submission started'); 
 
   const date = document.getElementById('appointment-date').value;
   const time = document.getElementById('appointment-time').value;
   const testType = localStorage.getItem('Test');
 
-  // Basic validation
   const name = document.getElementById('name').value.trim();
   const age = document.getElementById('age').value.trim();
   const phone = document.getElementById('phone').value.trim();
@@ -69,23 +68,22 @@ document.querySelector('.forms').addEventListener('submit', function (e) {
     test: testType
   };
 
-  console.log('Form data collected:', formData); // Debug log
+  console.log('Form data collected:', formData);
 
-  // Get existing tests
+
   const tests = JSON.parse(localStorage.getItem("tests")) || [];
   
   const newAppt = {
     date: date,
     time: time,
     test: testType,
-    email: email, // Fixed: removed .value since email is already the value
+    email: email, 
     patientName: name,
-    id: Date.now() // Add unique ID
+    id: Date.now()
   };
 
-  console.log('New appointment object:', newAppt); // Debug log
+  console.log('New appointment object:', newAppt); 
 
-  // Check for conflicts - same test type, date, and time
   const conflict = tests.some(a =>
     a.test === newAppt.test && a.date === newAppt.date && a.time === newAppt.time
   );
@@ -95,7 +93,6 @@ document.querySelector('.forms').addEventListener('submit', function (e) {
     return;
   }
 
-  // Check if same patient already has a test on the same date
   const patientConflict = tests.some(a =>
     a.email === newAppt.email && a.date === newAppt.date
   );
@@ -105,13 +102,10 @@ document.querySelector('.forms').addEventListener('submit', function (e) {
     return;
   }
 
-  console.log('No conflicts found'); // Debug log
 
-  // Add new appointment to tests array
   tests.push(newAppt);
   localStorage.setItem("tests", JSON.stringify(tests));
   
-  // Store form data for receipt page
   sessionStorage.setItem('appointmentData', JSON.stringify(formData));
 
   console.log('Data stored successfully'); // Debug log
@@ -121,6 +115,5 @@ document.querySelector('.forms').addEventListener('submit', function (e) {
   
   console.log('About to redirect to: /bookingdone/done_tests.html'); // Debug log
   
-  // Redirect to receipt page
   window.location = "/bookingdone/done_tests.html";
 });
