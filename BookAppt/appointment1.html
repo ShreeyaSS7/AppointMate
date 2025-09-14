@@ -136,19 +136,20 @@
     </div>
   </section>
   <script>
+    
     const doc=localStorage.getItem("doctor");
     if (doc){
       const box=document.getElementById("doc-name");
       box.innerText="Book Appointment with "+ doc.toUpperCase();
-      if(doc=="d1"){
+      if(doc=='Dr. Sanika Patil'){
       const inf=document.getElementById("info");
       inf.innerText="Orthopedic | Consultation Fee : ₹1500 | Follow-up Fee : ₹800";
     }
-    else if(doc=="d2"){
+    else if(doc=='Dr. Heena Sharma'){
       const inf=document.getElementById('info');
       inf.innerText="Neurologist | Consultation Fee : ₹1500 | Follow-up Fees : ₹800";
     }
-    else if (doc=="d3"){
+    else if (doc=='Dr. Chetan Verma'){
       const inf=document.getElementById('info');
       inf.innerText="Oncologist | Consultation Fee : ₹1500 | Follow-up Fees : ₹800";
     }
