@@ -1,1 +1,4 @@
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+AppointMate – Appointment Management System
+AppointMate is a full stack Java application designed to streamline appointment scheduling and management. It provides a responsive frontend for creating, viewing, and managing appointments, while integrating seamlessly with backend logic to handle requests efficiently. The system enhances user experience by making appointment workflows simple and interactive.# Tech Stack
+- Java, React, Spring Boot
+- HTML, CSS, JS for frontend
